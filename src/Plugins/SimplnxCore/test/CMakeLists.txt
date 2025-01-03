@@ -137,6 +137,7 @@ set(${PLUGIN_NAME}UnitTest_SRCS
   WriteBinaryDataTest.cpp
   WriteFeatureDataCSVTest.cpp
   WriteLosAlamosFFTTest.cpp
+  WriteNodesAndElementsFilesTest.cpp
   WriteStlFileTest.cpp
   WriteVtkRectilinearGridTest.cpp
 )
