@@ -16,7 +16,7 @@ namespace ComputeTriangleGeomShapesFilterTest
 const std::string k_TriangleGeometryName = "TriangleDataContainer";
 const std::string k_FaceLabelsName = "FaceLabels";
 const std::string k_FaceFeatureName = "FaceFeatureData";
-const std::string k_FaceDataName = "FaceData";
+const std::string k_FaceAttributeMatrixName = "FaceData";
 const std::string k_CentroidsArrayName = "Centroids";
 const std::string k_VolumesArrayName = "Volumes";
 
@@ -27,7 +27,7 @@ const std::string k_AspectRatiosArrayName = "AspectRatios [NX Computed]";
 
 const DataPath k_GeometryPath = DataPath({k_TriangleGeometryName});
 const DataPath k_FaceFeatureAttributeMatrixPath = k_GeometryPath.createChildPath(k_FaceFeatureName);
-const DataPath k_FaceLabelsPath = k_GeometryPath.createChildPath(k_FaceDataName).createChildPath(k_FaceLabelsName);
+const DataPath k_FaceLabelsPath = k_GeometryPath.createChildPath(k_FaceAttributeMatrixName).createChildPath(k_FaceLabelsName);
 const DataPath k_FaceFeatureCentroidsPath = k_FaceFeatureAttributeMatrixPath.createChildPath(k_CentroidsArrayName);
 const DataPath k_FaceFeatureVolumesPath = k_FaceFeatureAttributeMatrixPath.createChildPath(k_VolumesArrayName);
 } // namespace ComputeTriangleGeomShapesFilterTest
