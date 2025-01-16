@@ -52,10 +52,12 @@ public:
   ITKMeanProjectionImageFilter& operator=(ITKMeanProjectionImageFilter&&) noexcept = delete;
 
   // Parameter Keys
+  static inline constexpr StringLiteral k_ProjectionDimension_Key = "projection_dimension";
+  static inline constexpr StringLiteral k_RemoveOriginalGeometry_Key = "remove_original_geometry";
   static inline constexpr StringLiteral k_InputImageGeomPath_Key = "input_image_geometry_path";
   static inline constexpr StringLiteral k_InputImageDataPath_Key = "input_image_data_path";
+  static inline constexpr StringLiteral k_OutputImageGeomName_Key = "output_image_geometry_name";
   static inline constexpr StringLiteral k_OutputImageArrayName_Key = "output_array_name";
-  static inline constexpr StringLiteral k_ProjectionDimension_Key = "projection_dimension";
 
   /**
    * @brief Returns the name of the filter.
@@ -134,4 +136,4 @@ protected:
 };
 } // namespace nx::core
 
-SIMPLNX_DEF_FILTER_TRAITS(nx::core, ITKMeanProjectionImageFilter, "6418e0cb-1a6f-43c5-9de4-fdfbb7983809");
+SIMPLNX_DEF_FILTER_TRAITS(nx::core, ITKMeanProjectionImageFilter, "62ffddba-cc57-45fc-a93a-27914eea11ad");

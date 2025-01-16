@@ -8,8 +8,8 @@
 namespace nx::core
 {
 /**
- * @class ITKBinaryProjectionImageFilter
- * @brief Binary projection.
+ * @class ITKMinimumProjectionImageFilter
+ * @brief Minimum projection.
  *
  * This class was contributed to the Insight Journal by Gaetan Lehmann. The original paper can be found at https://www.insight-journal.org/browse/publication/71
  *
@@ -25,34 +25,31 @@ namespace nx::core
  * @see MeanProjectionImageFilter
  *
  *
- * @see MeanProjectionImageFilter
- *
- *
- * @see MaximumProjectionImageFilter
- *
- *
- * @see MinimumProjectionImageFilter
- *
- *
  * @see StandardDeviationProjectionImageFilter
  *
  *
  * @see SumProjectionImageFilter
  *
+ *
+ * @see BinaryProjectionImageFilter
+ *
+ *
+ * @see MaximumProjectionImageFilter
+ *
  * ITK Module: ITKImageStatistics
  * ITK Group: ImageStatistics
  */
-class ITKIMAGEPROCESSING_EXPORT ITKBinaryProjectionImageFilter : public IFilter
+class ITKIMAGEPROCESSING_EXPORT ITKMinimumProjectionImageFilter : public IFilter
 {
 public:
-  ITKBinaryProjectionImageFilter() = default;
-  ~ITKBinaryProjectionImageFilter() noexcept override = default;
+  ITKMinimumProjectionImageFilter() = default;
+  ~ITKMinimumProjectionImageFilter() noexcept override = default;
 
-  ITKBinaryProjectionImageFilter(const ITKBinaryProjectionImageFilter&) = delete;
-  ITKBinaryProjectionImageFilter(ITKBinaryProjectionImageFilter&&) noexcept = delete;
+  ITKMinimumProjectionImageFilter(const ITKMinimumProjectionImageFilter&) = delete;
+  ITKMinimumProjectionImageFilter(ITKMinimumProjectionImageFilter&&) noexcept = delete;
 
-  ITKBinaryProjectionImageFilter& operator=(const ITKBinaryProjectionImageFilter&) = delete;
-  ITKBinaryProjectionImageFilter& operator=(ITKBinaryProjectionImageFilter&&) noexcept = delete;
+  ITKMinimumProjectionImageFilter& operator=(const ITKMinimumProjectionImageFilter&) = delete;
+  ITKMinimumProjectionImageFilter& operator=(ITKMinimumProjectionImageFilter&&) noexcept = delete;
 
   // Parameter Keys
   static inline constexpr StringLiteral k_ProjectionDimension_Key = "projection_dimension";
@@ -61,15 +58,6 @@ public:
   static inline constexpr StringLiteral k_InputImageDataPath_Key = "input_image_data_path";
   static inline constexpr StringLiteral k_OutputImageGeomName_Key = "output_image_geometry_name";
   static inline constexpr StringLiteral k_OutputImageArrayName_Key = "output_array_name";
-  static inline constexpr StringLiteral k_ForegroundValue_Key = "foreground_value";
-  static inline constexpr StringLiteral k_BackgroundValue_Key = "background_value";
-
-  /**
-   * @brief Reads SIMPL json and converts it simplnx Arguments.
-   * @param json
-   * @return Result<Arguments>
-   */
-  static Result<Arguments> FromSIMPLJson(const nlohmann::json& json);
 
   /**
    * @brief Returns the name of the filter.
@@ -148,4 +136,4 @@ protected:
 };
 } // namespace nx::core
 
-SIMPLNX_DEF_FILTER_TRAITS(nx::core, ITKBinaryProjectionImageFilter, "04ea495e-2cf0-4dba-8d29-cf33a38c094d");
+SIMPLNX_DEF_FILTER_TRAITS(nx::core, ITKMinimumProjectionImageFilter, "86898336-8680-4c4e-b166-3f8de9e3d4f2");

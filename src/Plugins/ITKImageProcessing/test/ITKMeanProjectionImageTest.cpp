@@ -36,7 +36,7 @@ TEST_CASE("ITKImageProcessing::ITKMeanProjectionImageFilter(z_projection)", "[IT
   args.insertOrAssign(ITKMeanProjectionImageFilter::k_InputImageGeomPath_Key, std::make_any<DataPath>(inputGeometryPath));
   args.insertOrAssign(ITKMeanProjectionImageFilter::k_InputImageDataPath_Key, std::make_any<DataPath>(inputDataPath));
   args.insertOrAssign(ITKMeanProjectionImageFilter::k_OutputImageArrayName_Key, std::make_any<DataObjectNameParameter::ValueType>(outputArrayName));
-  args.insertOrAssign(ITKMeanProjectionImage::k_ProjectionDimension_Key, std::make_any<UInt32Parameter::ValueType>(2));
+  args.insertOrAssign(ITKMeanProjectionImageFilter::k_ProjectionDimension_Key, std::make_any<UInt32Parameter::ValueType>(2));
 
   auto preflightResult = filter.preflight(dataStructure, args);
   SIMPLNX_RESULT_REQUIRE_VALID(preflightResult.outputActions)

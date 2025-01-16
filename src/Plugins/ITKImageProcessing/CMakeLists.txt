@@ -167,9 +167,9 @@ if(NOT ITKIMAGEPROCESSING_LEAN_AND_MEAN)
     # ITKBinaryClosingByReconstructionImage
     # ITKBinomialBlurImage
     # ITKLaplacianSharpeningImage
-    # ITKMaximumProjectionImage
-    # ITKMedianProjectionImage
-    # ITKMinimumProjectionImage
+    ITKMaximumProjectionImageFilter
+    ITKMedianProjectionImageFilter
+    ITKMinimumProjectionImageFilter
     # ITKMultiScaleHessianBasedObjectnessImage
     # ITKSaltAndPepperNoiseImage
     # ITKShiftScaleImage
@@ -182,7 +182,7 @@ if(NOT ITKIMAGEPROCESSING_LEAN_AND_MEAN)
     # -----------------------------------------------------------------------------
     # ITKBoundedReciprocalImage
     # ITKNormalizeToConstantImage
-    # ITKMeanProjectionImage
+    ITKMeanProjectionImageFilter
     # ITKStandardDeviationProjectionImage
     # ITKSumProjectionImage
     # ITKMorphologicalWatershedFromMarkersImage
@@ -265,6 +265,7 @@ set(${PLUGIN_NAME}_Common_Srcs
   ${${PLUGIN_NAME}_SOURCE_DIR}/src/${PLUGIN_NAME}/Common/ITKArrayHelper.cpp
   ${${PLUGIN_NAME}_SOURCE_DIR}/src/${PLUGIN_NAME}/Common/ITKProgressObserver.hpp
   ${${PLUGIN_NAME}_SOURCE_DIR}/src/${PLUGIN_NAME}/Common/ITKDream3DFilterInterruption.hpp
+  ${${PLUGIN_NAME}_SOURCE_DIR}/src/${PLUGIN_NAME}/Common/ProjectionUtils.hpp
   ${${PLUGIN_NAME}_SOURCE_DIR}/src/${PLUGIN_NAME}/Common/ReadImageUtils.hpp
   ${${PLUGIN_NAME}_SOURCE_DIR}/src/${PLUGIN_NAME}/Common/ReadImageUtils.cpp
 )

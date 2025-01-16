@@ -1,6 +1,6 @@
-# ITK Mean Projection Image Filter (ITKMeanProjectionImage)
+# ITK Median Projection Image Filter (ITKMedianProjectionImage)
 
-Mean projection.
+Median projection.
 
 ## Group (Subgroup)
 
@@ -18,7 +18,7 @@ This class was contributed to the Insight Journal by Gaetan Lehmann. The origina
 
 - [ProjectionImageFilter](https://itk.org/Doxygen/html/classitk_1_1ProjectionImageFilter.html)
 
-- [MedianProjectionImageFilter](https://itk.org/Doxygen/html/classitk_1_1MedianProjectionImageFilter.html)
+- [MeanProjectionImageFilter](https://itk.org/Doxygen/html/classitk_1_1MeanProjectionImageFilter.html)
 
 - [MinimumProjectionImageFilter](https://itk.org/Doxygen/html/classitk_1_1MinimumProjectionImageFilter.html)
 

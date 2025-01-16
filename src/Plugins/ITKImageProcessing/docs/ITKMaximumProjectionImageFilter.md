@@ -1,6 +1,6 @@
-# ITK Mean Projection Image Filter (ITKMeanProjectionImage)
+# ITK Maximum Projection Image Filter (ITKMaximumProjectionImage)
 
-Mean projection.
+Maximum projection.
 
 ## Group (Subgroup)
 
@@ -28,7 +28,7 @@ This class was contributed to the Insight Journal by Gaetan Lehmann. The origina
 
 - [BinaryProjectionImageFilter](https://itk.org/Doxygen/html/classitk_1_1BinaryProjectionImageFilter.html)
 
-- [MaximumProjectionImageFilter](https://itk.org/Doxygen/html/classitk_1_1MaximumProjectionImageFilter.html)
+- [MeanProjectionImageFilter](https://itk.org/Doxygen/html/classitk_1_1MeanProjectionImageFilter.html)
 
 % Auto generated parameter table will be inserted here
 
